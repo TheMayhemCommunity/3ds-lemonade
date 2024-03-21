@@ -1,5 +1,5 @@
 list(APPEND CMAKE_MODULE_PATH "${SRC_DIR}/CMakeModules")
-include(GenerateBuildInfo)
+include(${SRC_DIR}/CMakeModules/GenerateBuildInfo.cmake)
 
 # The variable SRC_DIR must be passed into the script (since it uses the current build directory for all values of CMAKE_*_DIR)
 set(VIDEO_CORE "${SRC_DIR}/src/video_core")
