@@ -363,13 +363,13 @@ renderer_debug =
 [WebService]
 # Whether or not to enable telemetry
 # 0 (default): No, 1: Yes
-enable_telemetry =
+enable_telemetry = 0
 # URL for Web API
-web_api_url = https://citraldn.naylahanegan.com
+web_api_url = citraldn.naylahanegan.com
 # Username and token for Citra Web Service
 # See https://profile.citra-emu.org/ for more info
-citra_username =
-citra_token =
+citra_username = yuzu
+citra_token = 781bfcf8-1804-4a9b-b171-79d4df5d667f
 
 [Video Dumping]
 # Format of the video to output, default: webm

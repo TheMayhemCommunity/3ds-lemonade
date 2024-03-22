@@ -841,13 +841,15 @@ void Config::ReadWebServiceValues() {
     NetSettings::values.enable_telemetry =
         ReadSetting(QStringLiteral("enable_telemetry"), false).toBool();
     NetSettings::values.web_api_url =
-        ReadSetting(QStringLiteral("web_api_url"), QStringLiteral("https://citraldn.naylahanegan.com"))
+        ReadSetting(QStringLiteral("web_api_url"), QStringLiteral("citraldn.naylahanegan.com"))
             .toString()
             .toStdString();
     NetSettings::values.citra_username =
-        ReadSetting(QStringLiteral("citra_username")).toString().toStdString();
+        ReadSetting(QStringLiteral("citra_username"), QStringLiteral("yuzu"))
+            .toString()
+            .toStdString();
     NetSettings::values.citra_token =
-        ReadSetting(QStringLiteral("citra_token")).toString().toStdString();
+        ReadSetting(QStringLiteral("citra_token"), QStringLiteral("781bfcf8-1804-4a9b-b171-79d4df5d667f")).toString().toStdString();
 
     qt_config->endGroup();
 }
@@ -1324,11 +1326,13 @@ void Config::SaveWebServiceValues() {
     WriteSetting(QStringLiteral("enable_telemetry"), NetSettings::values.enable_telemetry, false);
     WriteSetting(QStringLiteral("web_api_url"),
                  QString::fromStdString(NetSettings::values.web_api_url),
-                 QStringLiteral("https://citraldn.naylahanegan.com"));
+                 QStringLiteral("citraldn.naylahanegan.com"));
     WriteSetting(QStringLiteral("citra_username"),
-                 QString::fromStdString(NetSettings::values.citra_username));
+                 QString::fromStdString(NetSettings::values.citra_username),
+                 QStringLiteral("yuzu"));
     WriteSetting(QStringLiteral("citra_token"),
-                 QString::fromStdString(NetSettings::values.citra_token));
+                 QString::fromStdString(NetSettings::values.citra_token),
+                 QStringLiteral("781bfcf8-1804-4a9b-b171-79d4df5d667f"));
 
     qt_config->endGroup();
 }
