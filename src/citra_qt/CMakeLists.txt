@@ -367,5 +367,5 @@ endif()
 # Bundle in-place on MSVC so dependencies can be resolved by builds.
 if (MSVC)
     include(BundleTarget)
-    bundle_target_in_place(lemoande-qt)
+    bundle_target_in_place(lemonade-qt)
 endif()
