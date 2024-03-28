@@ -1,8 +1,8 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=Lemonade
-Comment=Multiplayer room host for Lemonade
+Name=Citri
+Comment=Multiplayer room host for Citri
 Icon=citra
 TryExec=citra-room
 Exec=citra-room %f

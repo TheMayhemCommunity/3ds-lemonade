@@ -84,7 +84,7 @@ static void PrintHelp(const char* argv0) {
 }
 
 static void PrintVersion() {
-    std::cout << "Lemonade " << Common::g_scm_branch << " " << Common::g_scm_desc << std::endl;
+    std::cout << "Citri " << Common::g_scm_branch << " " << Common::g_scm_desc << std::endl;
 }
 
 static void OnStateChanged(const Network::RoomMember::State& state) {
@@ -416,7 +416,7 @@ int main(int argc, char** argv) {
         return -1;
     case Core::System::ResultStatus::ErrorLoader_ErrorEncrypted:
         LOG_CRITICAL(Frontend, "The game that you are trying to load must be decrypted before "
-                               "being used with Lemonade. \n\n For more information on dumping and "
+                               "being used with Citri. \n\n For more information on dumping and "
                                "decrypting games, please refer to: "
                                "https://citra-emu.org/wiki/dumping-game-cartridges/");
         return -1;
