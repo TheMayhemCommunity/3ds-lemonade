@@ -1,12 +1,22 @@
 <h1 align="center">
   <br>
-    Lemonade
-    <br><h4 align="center">For Mayhem</h4></center>
-     <br>
-    <p align="center" href="https://github.com/Gamer64ytb/Lemonade/blob/master/"><img src="https://github.com/Gamer64ytb/Lemonade/blob/master/assets/Lemonade.png" alt="Lemonade" width="200"></p>
+  <a href="https://github.com/TheMayhemCommunity/citri-emu"><img src="https://github.com/TheMayhemCommunity/citri-emu/assets/48419040/f23fe4b9-e477-4717-b3ef-4adad19cf7b4" alt="citri" width="1000"></a>
   <br>
-  <br>
+
+  <h3 align="center">A fork of some 3DS Emualtor, with reimplemented multiplayer support</h3>
   <br>
 </h1>
 
-Lemonade for Mayhem is a fork of Lemonade, a fork of that 3ds emulator tailed for use in The Mayhem Community's Netplay circles.
+## Download
+
+You can download the latest releases automatically via GitHub Releases.
+
+
+## Support
+
+If you enjoy the project and want to support us financially, please just spread the word!
+We do NOT accept donations.
+
+## License
+
+Citri is licensed under the GPLv3 (or any later version). Refer to the [LICENSE.txt](https://github.com/TheMayhemCommunity/citri-emu/blob/master/LICENSE.txt) file.
