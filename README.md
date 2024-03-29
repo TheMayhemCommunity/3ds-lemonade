@@ -19,4 +19,4 @@ We do NOT accept donations.
 
 ## License
 
-Citri is licensed under the GPLv3 (or any later version). Refer to the [LICENSE.txt](https://github.com/TheMayhemCommunity/citri-emu/blob/master/LICENSE.txt) file.
+Citri is licensed under the GPLv3 (or any later version). Refer to the [license.txt](https://github.com/TheMayhemCommunity/citri-emu/blob/master/license.txt) file.
