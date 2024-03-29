@@ -8,7 +8,7 @@ add_executable(citra-room
 
 create_target_directory_groups(citra-room)
 
-set_target_properties(citra-room PROPERTIES OUTPUT_NAME "lemonade-room")
+set_target_properties(citra-room PROPERTIES OUTPUT_NAME "citri-qt")
 
 target_link_libraries(citra-room PRIVATE citra_common network)
 if (ENABLE_WEB_SERVICE)
