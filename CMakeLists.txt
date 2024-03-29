@@ -434,9 +434,9 @@ add_subdirectory(src)
 add_subdirectory(dist/installer)
 
 
-# Set lemonade-qt project or citra project as default StartUp Project in Visual Studio depending on whether QT is enabled or not
+# Set citri-qt project or citra project as default StartUp Project in Visual Studio depending on whether QT is enabled or not
 if(ENABLE_QT)
-    set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT lemonade-qt)
+    set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT citri-qt)
 else()
     set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT citra)
 endif()
@@ -449,7 +449,7 @@ if (NOT ANDROID AND NOT IOS)
         bundle_target(citra)
     endif()
     if (ENABLE_QT)
-        bundle_target(lemonade-qt)
+        bundle_target(citri-qt)
     endif()
     if (ENABLE_DEDICATED_ROOM)
         bundle_target(citra-room)
@@ -464,7 +464,7 @@ endif()
 # http://standards.freedesktop.org/icon-theme-spec/icon-theme-spec-latest.html
 # http://standards.freedesktop.org/shared-mime-info-spec/shared-mime-info-spec-latest.html
 if(ENABLE_QT AND UNIX AND NOT APPLE)
-    install(FILES "${PROJECT_SOURCE_DIR}/dist/lemonade-qt.desktop"
+    install(FILES "${PROJECT_SOURCE_DIR}/dist/citri-qt.desktop"
             DESTINATION "${CMAKE_INSTALL_PREFIX}/share/applications")
     install(FILES "${PROJECT_SOURCE_DIR}/dist/citra.svg"
             DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/scalable/apps")
@@ -479,7 +479,7 @@ if(UNIX)
     endif()
 
     if (ENABLE_QT)
-        install(FILES "${PROJECT_SOURCE_DIR}/dist/lemonade-qt.6"
+        install(FILES "${PROJECT_SOURCE_DIR}/dist/citri-qt.6"
                 DESTINATION "${CMAKE_INSTALL_PREFIX}/share/man/man6")
     endif()
 endif()
